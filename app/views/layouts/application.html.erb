@@ -18,17 +18,17 @@
       <nav aria-label="Page navigation example">
         <ul class="pagination">
           <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
+            <%= link_to '#', class: 'page-link', 'aria-label': 'Previous' do %>
               <span aria-hidden="true">&laquo;</span>
-            </a>
+            <% end %>
           </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><%= link_to '1', '#', class: 'page-link' %></li>
+          <li class="page-item"><%= link_to '2', '#', class: 'page-link' %></li>
+          <li class="page-item"><%= link_to '3', '#', class: 'page-link' %></li>
           <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
+            <%= link_to '#', class: 'page-link', 'aria-label': 'Next' do %>
               <span aria-hidden="true">&raquo;</span>
-            </a>
+            <% end %>
           </li>
         </ul>
       </nav>

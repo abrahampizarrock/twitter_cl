@@ -1,14 +1,16 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Tweets</h1>
+<h1 class="titulo">Tweets</h1>
 
-<div id="tweets">
+<%= link_to "Nuevo tweet", new_tweet_path, class:"btn btn-dark" %>
+
+<div class="twit">
   <% @tweets.each do |tweet| %>
     <%= render tweet %>
-    <p>
-      <%= link_to "Show this tweet", tweet %>
+    <p class="twit2">
+      <%= link_to "Mostrar este tweet", tweet, class:"btn btn-secondary" %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New tweet", new_tweet_path %>
+
